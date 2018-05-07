@@ -1,0 +1,140 @@
+/* jQuery Labs Style Guide
+Font family: Roboto Mono (body), Rubik (headers)
+Font-weight: normal, 700
+Icons: Material Icons
+Colors:
+#008000
+#ADAAAA
+#CCC
+#E34E45
+#EEE */
+
+/* - Form box-shadow: box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+- Save button box-shadow: box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3); */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    font-family: "Roboto Mono", sans-serif;
+    height: 100vh;
+}
+
+#table_box {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: wrap;
+    border-radius: 5px;
+    margin-top: 3rem;
+    list-style: none;
+    width: 20rem;
+}
+
+.header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #E34E45;
+    margin-top: 2rem;
+}
+
+.quote {
+    color: #000;
+}
+
+.table {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    color: #adaaaa;
+    background-color: #eee;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+/* Reserve Form */
+
+#reserve_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 45rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.location {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #adaaaa;
+}
+
+.reserve_header {
+    font-family: "Rubik", sans-serif;
+    color: #E34E45;
+    margin-top: 1rem;
+}
+
+.reserve_number {
+    font-size: 1.1rem;
+}
+
+input {
+    height: .8rem;
+    padding: 20px;
+    border-bottom: 1px solid #adaaaa;
+    font-size: 1.2rem;
+}
+
+#button {
+    color: #fff;
+    background-color:  #008000;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    border: none;
+    height: 2.6rem;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.hidden {
+    display: flex;
+}
+
+
+/* AVAILABLE & RESERVED CLASSES */
+
+.reserved {
+    color: #eee;
+    background-color: #ADAAAA;
+    cursor: not-allowed;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    #reserve_box {
+        width: 30rem;
+    }
+}
