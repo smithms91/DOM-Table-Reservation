@@ -105,6 +105,13 @@ input {
     cursor: pointer;
 }
 
+#hover_box {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    display: none;
+}
+
 /* AVAILABLE & RESERVED CLASSES */
 
 .available {
