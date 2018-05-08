@@ -112,13 +112,17 @@ input {
     height: 60px;
     border-radius: 100px;
     color: #adaaaa;
-    background-color: #eee;
+    background-color: #efefef;
     margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: .8rem;
     cursor: pointer;
+}
+
+.available:hover {
+    background-color: #e1d7d4;
 }
 
 .reserved {
@@ -134,7 +138,6 @@ input {
     font-size: .8rem;
     cursor: not-allowed;
 }
-
 
 /* Media Queries */
 
