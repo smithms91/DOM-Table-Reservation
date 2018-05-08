@@ -7,6 +7,7 @@ $(document).ready(() => {
 
     //Tables that are available to click
     $(".available").on("click", () => {
+        let index = 
         $("#reserve_box").slideToggle();
         console.log("YES YOU CLICKED AVAILABLE");
     });
@@ -29,5 +30,9 @@ $(document).ready(() => {
             $($("#reserve_box")).fadeOut();
         }
     });
+
+    $(".available").on("click", (e) => {
+        $(e.target).toggleClass("reserved available")
+    })
 
 });
