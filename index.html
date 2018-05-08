@@ -7,22 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Table Finder</title>
 </head>
 <body>
 
 <h1 class="header">Table Finder</h1>
 <p class="quote">Pick your table now</p>
 <div id="table_box">
-    <div class="table">1</div>
-    <div class="table reserved">2</div>
-    <div class="table">3</div>
-    <div class="table">4</div>
-    <div class="table">5</div>
-    <div class="table reserved">6</div>
-    <div class="table">7</div>
-    <div class="table">8</div>
-    <div class="table">9</div>
+    <div class="available" id="1">1</div>
+    <div class="reserved" id="2">2</div>
+    <div class="available" id="3">3</div>
+    <div class="available" id="4">4</div>
+    <div class="available" id="5">5</div>
+    <div class="reserved" id="6">6</div>
+    <div class="available" id="7">7</div>
+    <div class="available" id="8">8</div>
+    <div class="available" id="9">9</div>
 </div>
 
 <div id="reserve_box">
@@ -31,7 +31,7 @@
     <input type="text" name="name" id="name" placeholder="Name">
     <input type="tel" name="number" id="number" placeholder="Phone Number">
     <input type="number" name="quantity" id="quantity" placeholder="Quantity">
-    <input type="button" value="SAVE" id="button">
+    <button type="button" value="SAVE" id="button">SAVE</button>
     <i class="material-icons location">clear</i>
 </div>
 

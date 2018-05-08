@@ -3,12 +3,12 @@ Font family: Roboto Mono (body), Rubik (headers)
 Font-weight: normal, 700
 Icons: Material Icons
 Colors:
-#008000
+/* #008000
 #ADAAAA
 #CCC
 #E34E45
-#EEE */
-
+#EEE 
+#E1D7D4*/
 /* - Form box-shadow: box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
 - Save button box-shadow: box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3); */
 
@@ -21,13 +21,19 @@ Colors:
 }
 
 body {
-    background-color: #ccc;
+    background-color: #E1D7D4;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 2.5rem;
     font-family: "Roboto Mono", sans-serif;
-    height: 100vh;
+}
+
+input {
+    height: .8rem;
+    padding: 20px;
+    border-bottom: 1px solid #adaaaa;
+    font-size: .9rem;
 }
 
 #table_box {
@@ -40,6 +46,7 @@ body {
     margin-top: 3rem;
     list-style: none;
     width: 20rem;
+    height: 100%;
 }
 
 .header {
@@ -53,19 +60,6 @@ body {
     color: #000;
 }
 
-.table {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    color: #adaaaa;
-    background-color: #eee;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8rem;
-}
-
 /* Reserve Form */
 
 #reserve_box {
@@ -73,13 +67,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 95%;
-    height: 45rem;
+    height: 25rem;
     background-color: #fff;
     box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
     padding: 1.5rem;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, -35%);
+    top: -270px;
+    z-index: 222;
 }
 
 .location {
@@ -87,6 +81,7 @@ body {
     top: 15px;
     right: 15px;
     color: #adaaaa;
+    cursor: pointer;
 }
 
 .reserve_header {
@@ -99,13 +94,6 @@ body {
     font-size: 1.1rem;
 }
 
-input {
-    height: .8rem;
-    padding: 20px;
-    border-bottom: 1px solid #adaaaa;
-    font-size: 1.2rem;
-}
-
 #button {
     color: #fff;
     background-color:  #008000;
@@ -114,21 +102,38 @@ input {
     height: 2.6rem;
     font-size: 1rem;
     padding: 10px;
+    cursor: pointer;
 }
-
-.hidden {
-    display: flex;
-}
-
 
 /* AVAILABLE & RESERVED CLASSES */
 
-.reserved {
-    color: #eee;
-    background-color: #ADAAAA;
-    cursor: not-allowed;
+.available {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    color: #adaaaa;
+    background-color: #eee;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    cursor: pointer;
 }
 
+.reserved {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    color: #eee;
+    background-color: #adaaaa;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    cursor: not-allowed;
+}
 
 
 /* Media Queries */
