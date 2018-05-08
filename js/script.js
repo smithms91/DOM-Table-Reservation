@@ -6,20 +6,20 @@ $(document).ready(() => {
     $("#reserve_box").hide();
 
     //Tables that are available to click
-    $(".available").on("click", () => {
-        let index = 
+    $(document).on("click", "available", () => {
         $("#reserve_box").slideToggle();
         console.log("YES YOU CLICKED AVAILABLE");
     });
 
     //Clicking the X to close the form
-    $(".location").click(() => {
+    $(".location").on("click", () => {
         $("#reserve_box").slideToggle();
     });
 
     //Submit Button
-    $("#button").click(() => {
-        console.log($("input"));
+    $("#button").on("click", () => {
+        let username = $("#name").val();
+        console.log(username);
         $("input").val("");
         $("#reserve_box").slideToggle();
     });
@@ -31,8 +31,9 @@ $(document).ready(() => {
         }
     });
 
-    $(".available").on("click", (e) => {
-        $(e.target).toggleClass("reserved available")
+    $(document).on("click", ".available", (event) => {
+        $(event.target).removeClass("available").addClass("reserved");
+        $("#reserve_box").slideToggle();
     })
 
 });
