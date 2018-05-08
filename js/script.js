@@ -2,15 +2,32 @@
 
 $(document).ready(() => {
     
+    //Initially hiding the box
     $("#reserve_box").hide();
 
-    const tables = $(".table");
-    tables.click(() => {
-        $("#reserve_box").toggle();
-    })
+    //Tables that are available to click
+    $(".available").on("click", () => {
+        $("#reserve_box").slideToggle();
+        console.log("YES YOU CLICKED AVAILABLE");
+    });
 
-    let close = $(".location");
-    close.click(() => {
-        $("#reserve_box").toggle();
-    })
-})
+    //Clicking the X to close the form
+    $(".location").click(() => {
+        $("#reserve_box").slideToggle();
+    });
+
+    //Submit Button
+    $("#button").click(() => {
+        console.log($("input"));
+        $("input").val("");
+        $("#reserve_box").slideToggle();
+    });
+
+    //Close form on escape key
+    $(document).on('keydown', (e) => {
+        if (e.keyCode === 27) { // ESC
+            $($("#reserve_box")).fadeOut();
+        }
+    });
+
+});
