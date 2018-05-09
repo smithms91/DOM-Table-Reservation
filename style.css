@@ -106,10 +106,16 @@ input {
 }
 
 #hover_box {
-    background-color: red;
-    width: 500px;
-    height: 500px;
+    background-color: #adaaaa;
+    border: 1px solid black;
+    width: 150px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
     display: none;
+    position: absolute;
+    top: 66px;
+    z-index: 22222;
 }
 
 /* AVAILABLE & RESERVED CLASSES */
@@ -144,6 +150,7 @@ input {
     align-items: center;
     font-size: .8rem;
     cursor: not-allowed;
+    position: relative;
 }
 
 /* Media Queries */
