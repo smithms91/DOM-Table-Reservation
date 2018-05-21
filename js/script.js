@@ -40,7 +40,7 @@ $(document).ready(() => {
         $("#hover_box").html(`
         <p>Name: ${name}</p>
         <p>Size of party: ${quantity}</p>`);
-        //$(currentTable).append($("#hover_box"));
+        $(currentTable).append($("#hover_box"));
     });
     //Mouse OUT for info
     $(document).on("mouseout", ".reserved", () => {
