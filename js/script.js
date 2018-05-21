@@ -32,7 +32,7 @@ $(document).ready(() => {
     // MOUSEOVER FOR INFO
 
     //Mouse IN for info
-    $(document).on("mouseover", ".reserved", (e) => {
+    $("#hover_box").on("mouseover", ".reserved", (e) => {
         name = $(e.target).attr("name");
         quantity = $(e.target).attr("party");
         currentTable = $(e.target);
@@ -43,7 +43,7 @@ $(document).ready(() => {
         $(currentTable).append($("#hover_box"));
     });
     //Mouse OUT for info
-    $(document).on("mouseout", ".reserved", () => {
+    $("#hover_box").on("mouseout", ".reserved", () => {
         $("#hover_box").hide();
     })
 
